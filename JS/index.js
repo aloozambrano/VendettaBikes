@@ -22,6 +22,9 @@ class Bicicleta {
   }
 };
 
+// CARRITO DE COMPRAS
+const carrito = [];
+
 //TALLAS DE BICICLETAS
 const tallasDisponibles = ["47 X-Small", "50 Small", "53 Medium", "56 Large", "58 X-Large"];
 //OBJETOS PRODUCTOS
@@ -32,10 +35,10 @@ const bici4 = new Bicicleta(4, "Classic 4130", tallasDisponibles, 1850, 6);
 
 function seleccionarBicicleta(IDbicicleta) {
   switch (IDbicicleta) {
-    case 1: console.log(bici1.agregar(IDbicicleta)); break;
-    case 2: console.log(bici2.agregar(IDbicicleta)); break;
-    case 3: console.log(bici3.agregar(IDbicicleta)); break;
-    case 4: console.log(bici4.agregar(IDbicicleta)); break;
+    case 1: carrito.push(bici1.agregar(IDbicicleta)); break;
+    case 2: carrito.push(bici2.agregar(IDbicicleta)); break;
+    case 3: carrito.push(bici3.agregar(IDbicicleta)); break;
+    case 4: carrito.push(bici4.agregar(IDbicicleta)); break;
     default: console.log("El item seleccionado seleccionado es incorrecto"); break;
   }
 }
@@ -44,6 +47,12 @@ while (entrada != 0) {
   seleccionarBicicleta(entrada);
   entrada = parseInt(prompt("Ingresa el número de acuerdo al modelo de fixie que deseas: \n\n (1) Tiple Triangle \n (2) Oval \n (3) All Ground \n (4) Classic 4130 \n\n (0) Salir"));
 }
+
+console.log(carrito);
+
+
+
+
 
 // ACCESORIOS ACCESORIOS ACCESORIOS
 // let entrada2 = parseInt(prompt("Ingresa el número de acuerdo al modelo de fixie que deseas: \n\n (1) Mochila \n (2) Cartuchera \n (3) Gorra \n (4) Straps \n (5) Polo \n (6) Camisa \n\n (0) Salir"));
@@ -95,7 +104,6 @@ while (entrada != 0) {
 //   seleccionarAccesorio(entrada2);
 //   entrada2 = parseInt(prompt("Ingresa el número de acuerdo al modelo de fixie que deseas: \n\n (1) Mochila \n (2) Cartuchera \n (3) Gorra \n (4) Straps \n (5) Polo \n (6) Camisa \n\n (0) Salir"));
 // }
-
 
 
 

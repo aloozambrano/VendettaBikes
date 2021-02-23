@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *{
   margin: 0;
@@ -17,4 +17,49 @@
 
 .logo{
   height: 50px;
+}
+
+.tituloBanner{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+
+.tituloBanner h1{
+  font-size: 200px;
+  font-weight: 700;
+}
+
+.tituloBanner h3{
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* CARDS DE BICICLETAS */
+.productos{
+  margin: 5% 15% 5% 15%;
+}
+
+
+/* FOOTER  */
+footer{
+  margin: 5% 15% 1% 15%;
+}
+
+.footerContenedor{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerCard{
+  width: 200px;
+  height: 500px;
+}
+
+.copyright{
+  text-align: center;
 }

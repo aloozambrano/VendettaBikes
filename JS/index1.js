@@ -51,4 +51,6 @@ for (const listaCarrito of carrito) {
 }
 
 
-
+// BOTÓN BOLETIN FOOTER
+let btnBoletin = document.getElementById("btn_boletin")
+btnBoletin.onclick = () => { alert("Gracias por suscribirte!") };

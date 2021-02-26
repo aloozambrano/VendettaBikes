@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-*{
+*, html, body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,14 +9,22 @@
 
 .header{
   width: 100%;
-  height: 100vh;
-  background: rgb(124, 124, 124);
-  background: url('/CSS/images/index-banner-xl.jpg');
-  background-size: cover;
+  position: fixed;
+  z-index: 99;
 }
 
 .logo{
   height: 50px;
+}
+
+.bannerPrincipal{
+  margin-bottom: 80px;
+  padding: 40px;
+  width: 100%;
+  height: 100vh;
+  background: rgb(124, 124, 124);
+  background: url('/CSS/images/index-banner-xl.jpg');
+  background-size: cover;
 }
 
 .tituloBanner{
@@ -28,38 +36,51 @@
   flex-direction: column;
   color: rgb(255, 255, 255);
 }
-
 .tituloBanner h1{
   font-size: 200px;
   font-weight: 700;
 }
-
 .tituloBanner h3{
+  margin-left: 20px;
   font-style: italic;
   font-weight: 400;
 }
 
-/* CARDS DE BICICLETAS */
-.productos{
-  margin: 5% 15% 5% 15%;
+.subtitulo{
+  margin-top: 20px;
+  text-align: center;
 }
 
+/* CARDS DE BICICLETAS */
+.bicicletas{
+  margin: 5% 15% 0 15%;
+}
+.card{
+  margin: 0 40px 60px 40px;
+}
+
+/* CARDS DE ACCESORIOS */
+.accesorios{
+  margin: 5% 15% 5% 15%;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* FOOTER  */
 footer{
-  margin: 5% 15% 1% 15%;
+  margin: 5% 10% 1% 10%;
 }
-
 .footerContenedor{
   display: flex;
   justify-content: space-around;
 }
-
 .footerCard{
   width: 200px;
   height: 500px;
 }
-
 .copyright{
   text-align: center;
 }

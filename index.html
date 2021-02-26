@@ -38,79 +38,40 @@
             </li>
 
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
+  </div>
 
+  <div class="bannerPrincipal">
     <div class="tituloBanner">
-      <h1>VENDETTA BIKES</h1>
+      <h1>VENDETTA</h1>
+      <h1>BIKES</h1>
       <h3>"SIENTE LA LIBERTAD SOBRE RUEDAS"</h3>
     </div>
-
   </div>
 
-  <!-- CARDS DE PRODUCTOS -->
-  <div class="productos">
-    <div class="row row-cols-1 row-cols-md-2 g-2">
-      <div id="1" class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">TRIPLE TRIANGLE</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <p>Precio: S/.2513.4</p>
-            <a href="#" class="btn btn-primary">COMPRAR</a>
-          </div>
-        </div>
-      </div>
-      <div id="2" class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">OVAL</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <p>Precio: S/.2395.4</p>
-            <a href="#" class="btn btn-primary">COMPRAR</a>
-          </div>
-        </div>
-      </div>
-      <div id="3" class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">ALL GROUND</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <p>Precio: S/.2336.4</p>
-            <a href="#" class="btn btn-primary">COMPRAR</a>
-          </div>
-        </div>
-      </div>
-      <div id="4" class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLASSIC 4130</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <p>Precio: S/.2183</p>
-            <a href="#" class="btn btn-primary">COMPRAR</a>
-          </div>
-        </div>
-      </div>
+  <div class="subtitulo">
+    <h4><b>BICICLETAS</b></h4>
+    <p>¡Elije el modelo de tu fixie y customizalo según tu estilo!</p>
+  </div>
+
+  <!-- CARDS DE BICICLETAS -->
+  <div class="bicicletas">
+    <div id="bic" class="row row-cols-1 row-cols-md-2 g-2">
     </div>
   </div>
 
 
-  <!-- CARRITO DE COMPRAS -->
-  <div id="carritoDeCompras">
+  <div class="subtitulo">
+    <h4><b>ACCESORIOS</b></h4>
+    <p>¡Ponte a la moda fixie con nuestros accesorios!</p>
+  </div>
 
+  <!-- CARDS DE ACCESORIOS -->
+  <div class="accesorios">
+    <div id="acc" class="row row-cols-1 row-cols-md-2 g-2">
+    </div>
   </div>
 
 
@@ -131,10 +92,13 @@
       </div>
 
       <div class="footerCard">
-        <h5>BOLETÍN</h5>
-        <p>Ingresa tu correo para recibir noticias y promociones exclusivas.</p>
-        <input id="mail_boletin" type="email">
-        <button id="btn_boletin">UNIRSE</button>
+        <form id="boletin">
+          <h5>BOLETÍN</h5>
+          <p>Ingresa tu correo para recibir noticias y promociones exclusivas.</p>
+          <input type="text">
+          <input type="email">
+          <input type="submit">
+        </form>
       </div>
 
       <div class="footerCard">
@@ -145,11 +109,22 @@
       </div>
     </div>
 
+    <!-- NOTIFICACIÓN BOLETIN - MODAL -->
+    <div id="notificacion">
+
+    </div>
+
     <div class="copyright">
       <p>© 2021 Vendetta Bikes. All Rights Reserved.</p>
     </div>
 
   </footer>
+
+
+  <!-- CARRITO DE COMPRAS -->
+  <div id="carritoDeCompras">
+
+  </div>
 
 
   <script src="/JS/data.js"></script>

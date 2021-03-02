@@ -25,14 +25,14 @@ for (let listaBici of cardsBicis) {
 
   let b = document.createElement("div");
   b.classList.add("cardAccesorios")
-  b.innerHTML = `<div id="cardProducto" class="col">
+  b.innerHTML = `<div id="${listaBici.id}" class="col">
                    <div class="card h-100">
                       <img src="${listaBici.img}">
                       <div class="card-body">
                         <h5 class="card-title"><b> ${listaBici.modelo} </b></h5>
                         <p>Tallas: ${listaBici.talla}</p>
                         <p>Precio: S/.${listaBici.precio}</p>
-                        <a href="#" id="addCarrito" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                        <a href="#" id="${listaBici.id}" class="btn btn-primary">AGREGAR AL CARRITO</a>
                       </div>
                     </div>
                   </div>`;
@@ -65,13 +65,13 @@ for (let listaAcc of cardsAcc) {
 
   let e = document.createElement("div");
   e.classList.add("cardAccesorios")
-  e.innerHTML = `<div id="cardProducto" class="col">
+  e.innerHTML = `<div id="${listaAcc.id}" class="col">
                    <div class="card h-100">
                       <img src="${listaAcc.img}">
                       <div class="card-body">
                         <h5 class="card-title"><b> ${listaAcc.nombre} </b></h5>
                         <p>Precio: S/.${listaAcc.precioAcc}</p>
-                        <a href="#" id="addCarrito" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                        <a href="#" id="${listaAcc.idAcc}" class="btn btn-primary">AGREGAR AL CARRITO</a>
                       </div>
                     </div>
                   </div>`;
@@ -82,11 +82,10 @@ for (let listaAcc of cardsAcc) {
 // Evento de boton Añadir a Carrito 
 document.getElementById("bic").onclick = btnAgregarCarrito;
 document.getElementById("acc").onclick = btnAgregarCarrito;
-function btnAgregarCarrito() {
+function btnAgregarCarrito(event) {
   event.preventDefault();
   alert("PRODUCTO AGREGADO");
 }
-
 
 // BOTÓN BOLETIN FOOTER
 let formulario = document.getElementById("boletin");
@@ -100,8 +99,6 @@ formulario.onsubmit = (event) => {
   padre.innerHTML = `<p>¡${dataFormulario.nombre}!</p>
                       <p>Gracias por suscribirte a nuestro boletín mensual</p>`;
 };
-
-
 
 
 // // CARRITO DE COMPRAS
